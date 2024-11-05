@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Parent Portal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+</head>
+<style>
+    /* Main Content Styles */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean and modern font */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f4f4f4; /* Light background color for the page */
+}
+
+.dashboard {
+    display: flex; /* Enables flexbox for layout */
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    background-color: #2980b9; /* Sidebar background color */
+    color: white; /* Sidebar text color */
+    padding: 15px; /* Padding inside the sidebar */
+}
+
+.main-menu {
+    list-style-type: none; /* Removes bullet points from list */
+    padding: 0; /* Removes padding from the list */
+}
+
+.main-menu li {
+    margin: 10px 0; /* Adds space between menu items */
+}
+
+.main-menu a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.main-menu a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.content {
+    flex-grow: 1; /* Allows the content area to grow and fill space */
+    padding: 20px; /* Padding around the content */
+    background-color: white; /* White background for the content area */
+    border-radius: 8px; /* Rounded corners for the content box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    color: #2980b9; /* Main heading color */
+}
+
+h2 {
+    color: #2980b9; /* Subheading color */
+}
+
+p {
+    line-height: 1.6; /* Increases line height for better readability */
+    color: #333; /* Dark gray text color for paragraphs */
+}
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu li {
+    margin: 15px 0;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.main-menu a:hover {
+    background-color: #34495e;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white; /* Link color */
+    text-decoration: underline; /* Underline for links */
+}
+
+footer a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white; /* Link color */
+    text-decoration: underline; /* Underline for links */
+}
+
+footer a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+</style>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Parent Portal</h2>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="student.html">Exam Results</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="fees.html">Fees Structure</a></li>
+                <li><a href="#">Child Attendance</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Events and Activities</a></li>
+                <li><a href="reports.html">Grades and Reports</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>About Us</h1>
+            <section class="about-school">
+                <h2>Our School</h2>
+                <p>Welcome to 2024 Mount Sunset Primary school, a place where learning and growth are our top priorities. Established in [Year], we have been dedicated to providing quality education and nurturing young minds.</p>
+            </section>
+            <section class="mission-vision">
+                <h2>Our Mission</h2>
+                <p>Our mission is to empower students through a comprehensive curriculum, fostering critical thinking, creativity, and a love for learning.</p>
+                
+                <h2>Our Vision</h2>
+                <p>To create a supportive and inclusive community that inspires students to become responsible, engaged citizens.</p>
+            </section>
+            <section class="staff">
+                <h2>Meet Our Staff</h2>
+                <p>Our dedicated team of educators works tirelessly to ensure that each student receives personalized attention and support. We are proud of our diverse and experienced staff who bring a wealth of knowledge to the classroom.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mount Sunset Primary school. All rights reserved.</p>
+        <p><a href="login.html">Logout</a></p> <!-- Logout link added here -->
+    </footer>
+
+</body>
+</html>

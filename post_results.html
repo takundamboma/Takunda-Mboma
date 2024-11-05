@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Student Results</title>
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #31b0d5;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
+</style>
+
+<body>
+
+<h1>Post Student Results</h1>
+
+<form action="submit_results.php" method="POST">
+    <label for="student_name">Student Name:</label><br>
+    <input type="text" id="student_name" name="student_name" required><br><br>
+
+    <h2>Results</h2>
+    
+    <label for="maths_score">Maths Score:</label><br>
+    <input type="number" id="maths_score" name="maths_score" min="0" max="100" required><br><br>
+    
+    <label for="maths_comments">Maths Comments:</label><br>
+    <textarea id="maths_comments" name="maths_comments"></textarea><br><br>
+
+    <label for="english_score">English Score:</label><br>
+    <input type="number" id="english_score" name="english_score" min="0" max="100" required><br><br>
+
+    <label for="english_comments">English Comments:</label><br>
+    <textarea id="english_comments" name="english_comments"></textarea><br><br>
+
+    <label for="shona_score">Shona Score:</label><br>
+    <input type="number" id="shona_score" name="shona_score" min="0" max="100" required><br><br>
+
+    <label for="shona_comments">Shona Comments:</label><br>
+    <textarea id="shona_comments" name="shona_comments"></textarea><br><br>
+
+    <label for="general_score">General Paper Score:</label><br>
+    <input type="number" id="general_score" name="general_score" min="0" max="100" required><br><br>
+
+    <label for="general_comments">General Paper Comments:</label><br>
+    <textarea id="general_comments" name="general_comments"></textarea><br><br>
+
+    <input type="submit" value="Post Results">
+</form>
+
+</body>
+</html>
